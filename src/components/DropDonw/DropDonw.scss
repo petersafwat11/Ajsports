@@ -1,0 +1,50 @@
+@import "../../scss/variable";
+@import "../../scss/mixins";
+.dropdown {
+  &-btn {
+    background-color: $gray-dark;
+    padding: 0.4rem 1rem;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    @include respond(tab-port) {
+      width: 52px;
+      padding: 0.3rem 0.9rem;
+      font-size: 1rem;
+    }
+  }
+  &-content {
+    z-index: 10000000;
+    position: absolute;
+  }
+  &-item {
+    padding: 0.7rem 1rem;
+    margin: 0.6rem 0rem;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    background-color: #3e3e3f;
+    @include respond(tab-port) {
+      width: 50px;
+      padding: 0.3rem 0.7rem;
+    }
+    &:hover {
+      background-color: $gray-dark;
+    }
+  }
+}

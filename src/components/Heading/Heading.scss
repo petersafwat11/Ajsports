@@ -1,0 +1,15 @@
+@import "../../scss/variable";
+@import "../../scss/mixins";
+.heading {
+  margin-top: 2.2rem;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 3.6rem;
+  font-weight: 500;
+
+  @include respond(tab-port) {
+    margin-top: 2.5rem;
+    font-size: 2.3rem;
+  }
+}
