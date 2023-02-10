@@ -79,7 +79,7 @@
       margin-top: 10px;
       display: flex;
       justify-content: space-around;
-      gap: 3rem;
+      gap: 2.35rem;
       &-icon {
         color: white;
         font-size: 1.3rem;
@@ -106,8 +106,8 @@
       &-logo {
         & > * {
           & > img {
-            width: 10rem;
-            height: 13rem;
+            width: 8.5rem;
+            height: 11rem;
           }
         }
         @include respond(big-desktop) {
@@ -221,8 +221,8 @@
         & > img {
           // padding-right: 4rem;
           // margin-top: 0.5rem;
-          height: 10rem;
-          width: 10rem;
+          height: 8.5rem;
+          width: 8.5rem;
         }
       }
     }

@@ -38,6 +38,10 @@ const Donate = () => {
               <h4>Donate</h4>
               <div className="donate-line-border"></div>
             </div>
+            <div className="donate-para">
+              <p>we would like to apologize in advancefor any inconvenience caused by the quality of adds shown on the website. adverts and donations are the sole reasone we can keep our websiterunning seamlessly</p>
+              <p>we highly appreciate any donations and invest the funds into our plateform to provide a greater service to the fans</p>
+            </div>
             <div className="donate-container-width">
               <h4>Enter Amount:</h4>
               <div className="donate-container-box">

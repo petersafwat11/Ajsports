@@ -48,12 +48,11 @@ const ScoreBar = ({
 
         <div className="score-bar-responsive">
           <div className="score-bar-responsive-container">
-            <div className="score-bar-responsive-container-top">
-              <h4>{date}</h4>
-              <h5>{half}</h5>
-              <p>{league}</p>
-            </div>
             <div className="score-bar-responsive-container-bottom">
+              <div className="score-bar-responsive-container-top">
+                <h4>{date}</h4>
+                <p>{league}</p>
+              </div>
               <div className="score-bar-container-left-second">
                 <div className="score-bar-container-left-second-outer">
                   <span></span>
@@ -61,24 +60,56 @@ const ScoreBar = ({
                 </div>
               </div>
               <div className="score-bar-responsive-container-bottom-country">
+                <img src={firstimage} alt="flag" />
                 <h3>{firstname}</h3>
               </div>
-              <div className="score-bar-responsive-container-bottom-country-image">
-                <img src={firstimage} alt="flag" />
-              </div>
+              {/* <div className="score-bar-responsive-container-bottom-country-image">
+              </div> */}
               <div className="score-bar-responsive-container-bottom-vs">
                 <h5>vs</h5>
               </div>
-              <div className="score-bar-responsive-container-bottom-country-image">
-                <img src={secondimage} alt="flag" />
-              </div>
               <div className="score-bar-responsive-container-bottom-country">
                 <h3>{secondname}</h3>
+                <img src={secondimage} alt="flag" />
+              </div>
+              <div className="score-bar-responsive-container-top">
+                  <h5>{half}</h5>
               </div>
               <RedBtn text="watch" to="/watch" />
             </div>
           </div>
         </div>
+        {/* <div>
+          <div className="match-info">
+            <p>{date}</p>
+            <p>{league}</p>
+          </div>
+          <div>
+            <div className="score-bar-container-left-second">
+                <div className="score-bar-container-left-second-outer">
+                  <span></span>
+                  <p>Live</p>
+                </div>
+            </div>
+          </div>
+          <div className="match-first-team">
+            <img src={firstimage} alt='flag' />
+            <p>{firstname}</p>
+          </div>
+          <div className="match-vs">
+              vs
+          </div>
+          <div className="match-second-team">
+            <img src={secondimage} alt='flag' />
+            <p>{secondname}</p>
+          </div>
+          <div className="match-details">
+            {half}
+          </div>
+          <div>
+            <RedBtn text="watch" to="/watch" />
+          </div>
+        </div> */}
       </div>
     </>
   );
